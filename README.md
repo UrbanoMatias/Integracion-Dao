@@ -1,8 +1,8 @@
-## Guía de Lectura del Proyecto
+# Guía de Lectura del Proyecto
 
 Este documento proporciona una guía para entender la implementación de un DAO (Data Access Object) en nuestro proyecto. La finalidad es ofrecer una arquitectura bien organizada y escalable, evitando la confusión y malas prácticas que pueden surgir de un código desordenado. A continuación, te guiaré sobre cómo explorar y comprender la estructura del proyecto.
 
-# Introducción
+## Introducción
 
 La implementación de un DAO y una adecuada arquitectura de diseño permite gestionar y entender mejor los cambios realizados por otros miembros del equipo. Además, facilita la escalabilidad y mantiene el proyecto organizado. Cada función y método está ubicado en el archivo correspondiente para simplificar el mantenimiento y la expansión.
 
