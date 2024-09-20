@@ -4,7 +4,8 @@ import Dao from "../model/Dao.js";
 
 // Importa la clase UserService desde el archivo "userService.js".
 import UserService from "./userService.js";
-
+import CourseService from "./courseService.js";
+import BookService from "./bookService.js";
 // Importa la configuración desde el archivo "config.js".
 import config from "../config/config.js";
 
@@ -16,12 +17,15 @@ const dao = new Dao(config.mongo);
 // Esto permite que UserService utilice el DAO para realizar operaciones de acceso a datos relacionadas con usuarios.
 // La instancia de UserService estará lista para manejar todas las operaciones espesificas que sean propiamente de users.
 export const userService = new UserService(dao);
-
+export const courseService = new CourseService(dao);
+export const bookService = new BookService(dao);
+export const asignatureService = new AsignatureService(dao);
 // Ejemplo adicional:
 // Si en el futuro se crean más servicios, como un servicio para gestionar productos,
 // se puede instanciar el nuevo servicio de manera similar, utilizando el mismo DAO.
 // Por ejemplo:
-    import ProductService from "./productService.js";
-    export const productService = new ProductService(dao);
+import ProductService from "./productService.js";
+import AsignatureService from "./asignatureService.js";
+export const productService = new ProductService(dao);
 // Esto facilita la creación de servicios adicionales sin necesidad de modificar el DAO,
 // manteniendo una estructura modular y organizada.

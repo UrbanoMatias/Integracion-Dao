@@ -10,6 +10,8 @@ router.get("/users", userController.getUsers);
 // De la misma manera, se pueden agregar otras rutas vinculadas a sus controladores respectivos.
 router.post("/newUser", userController.insertUser);
 
+router.get("/user/:id", userController.getUserById);
+
 export default router;
 
 
